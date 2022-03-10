@@ -1,6 +1,5 @@
 package com.example.jogoforca02kotlin
 
-import kotlin.random.Random
 
 class JogoForca02(palavra_a_ser_usada: String, dica_da_palavra_a_ser_usada: String) {
     private var dica:String = String()                                                              // dica escolhida
@@ -31,9 +30,7 @@ class JogoForca02(palavra_a_ser_usada: String, dica_da_palavra_a_ser_usada: Stri
     @Throws(Exception::class)
     fun adivinhou(letra: String): Boolean {
         var letra = letra.uppercase()
-
         var padraozito = "[A-Z]".toRegex()
-
 
         if (!padraozito.matches(letra)) {
             throw Exception("Digite UMA LETRA!")

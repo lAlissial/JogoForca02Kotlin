@@ -1,6 +1,5 @@
 package com.example.jogoforca02kotlin
 
-import java.lang.Double.parseDouble
 import kotlin.system.exitProcess
 
 fun main(args: Array<String>) {
