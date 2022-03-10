@@ -3,9 +3,8 @@ package com.example.jogoforca02kotlin
 import kotlin.random.Random
 
 class JogoForca02(palavra_a_ser_usada: String, dica_da_palavra_a_ser_usada: String) {
-    private var N:Int = 0                                                                           // quantidade de palavras (lido do Map)*
-    private var dica:String = String()                                                             // dica escolhida
-    private var palavra:String = String()                                                          // a palavra escolhida
+    private var dica:String = String()                                                              // dica escolhida
+    private var palavra:String = String()                                                           // a palavra escolhida
     private var acertos = 0                                                                         // total de acertos do jogo
     private var erros = 0                                                                           // total de erros do jogo
     private var traco_palavra:StringBuffer = StringBuffer()                                         // guarda as letrinhas descobertas na posição certinha
@@ -15,7 +14,6 @@ class JogoForca02(palavra_a_ser_usada: String, dica_da_palavra_a_ser_usada: Stri
     private var penalidades: MutableList<String>
 
     init{
-        this.N = palavra_a_ser_usada.length
         this.palavra = palavra_a_ser_usada.trim().uppercase()
         this.dica = dica_da_palavra_a_ser_usada.uppercase()
         this.penalidades = mutableListOf("perna", "perna", "braço", "braço", "tronco", "cabeça")
